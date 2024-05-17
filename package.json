@@ -1,0 +1,22 @@
+{
+  "name": "personal-portfolio-nodejs",
+  "version": "1.0.0",
+  "description": "sandip personal portfolio website",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server.js"
+  },
+  "author": "sandip",
+  "license": "ISC",
+  "dependencies": {
+    "dotenv": "^16.4.5",
+    "ejs": "^3.1.10",
+    "express": "^4.19.2",
+    "fs": "^0.0.1-security",
+    "mongoose": "^8.3.4",
+    "path": "^0.12.7",
+    "pug": "^3.0.2",
+    "validator": "^13.12.0"
+  }
+}

@@ -1,0 +1,207 @@
+.about {
+  padding: 100px 15px;
+  background-color: #fff;
+}
+
+.title {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.title h1 {
+  margin: 0;
+}
+
+
+.img {
+  flex: 0 0 50%;
+  max-width: 50%;
+ 
+}
+
+
+.img img {
+  width: 100%;
+  border-radius: 4px;
+  display: block;
+  height: auto;
+}
+.img {
+  display: flex;
+  flex-direction: column;
+  animation: fade-inn 2s ease-in-out;
+}
+
+@keyframes fade-inn {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text {
+  flex: 0 0 50%;
+  max-width: 50%;
+  padding-left: 30px;
+}
+
+.text h4 {
+  font-size: 35px;
+  font-weight: 600;
+  margin: 0 0 10px;
+  color: #000;
+}
+
+.text h6 {
+  font-size: 30px;
+  font-weight: 500;
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.text h6 span {
+  color: #5f88e0;
+  position: relative;
+}
+
+.text h6 span::before {
+  content: "";
+  left: 0;
+  right: 90%;
+  position: absolute;
+  height: 2px;
+  bottom: 0px;
+  transition: all 0.5s ease;
+}
+
+.text h6 span:hover::before {
+  content: "";
+  left: 0;
+  right: 0;
+  position: absolute;
+  height: 2px;
+  background-color: #5f88e0;
+  bottom: 0px;
+}
+
+.text p {
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 24px;
+  color: #838383;
+}
+
+.skills {
+  padding: 20px 0px;
+  height: 100%;
+}
+
+.skills h6 {
+  font-size: 18px;
+  font-weight: 400;
+  margin: 0 0 25px;
+  color: #000;
+}
+
+.skills-list {
+  width: 300px;
+  display: flex;
+  justify-content: space-between;
+}
+
+.fa-ul li {
+  font-size: 20px;
+  font-weight: 400;
+  color: #838383
+}
+
+.fa-ul .fa-li {
+  font-size: 14px;
+  font-weight: 400;
+  color: #838383
+}
+.text {
+  display: flex;
+  flex-direction: column;
+  animation: fade-in 2s ease-in-out;
+}
+
+@keyframes fade-in {
+  0% {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.text h4,
+.text h6,
+.text p,
+.skills,
+.skills-list,
+.fa-ul,
+.fa-li {
+  margin: 0;
+}
+
+.social {
+  padding-top: 10px;
+}
+
+.social a {
+  height: 35px;
+  width: 35px;
+  background-color: #000;
+  display: inline-block;
+  border: 1px solid #000;
+  border-radius: 4px;
+  line-height: 28px;
+  text-align: center;
+  margin: 0px 1px;
+  transition: all 0.5s ease;
+  -webkit-transition: all 0.5s ease;
+}
+
+.social a:hover {
+  background-color: transparent;
+  color: #000;
+}
+
+.social a .fa {
+  color: #fff;
+  font-size: 20px;
+}
+
+.social a .fa:hover {
+  color: #000;
+}
+.about-content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.about-content .img {
+  flex: 2;
+}
+
+.about-content .text {
+  flex: 1;
+}
+
+.about-content .text h4,
+.about-content .text h6,
+.about-content .text p,
+.about-content .skills,
+.about-content .skills-list,
+.about-content .fa-ul,
+.about-content .fa-li {
+  margin: 0;
+}
